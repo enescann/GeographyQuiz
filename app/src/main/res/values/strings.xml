@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Coğrafya ÖABT </string>
+    <string name="skor">20 soruluk testi %1$d cevap vererek tamamladınız. Doğru cevap oranınız %%%2$.02f </string>
+    <string name="action_settings">Ayarlar</string>
+    <string name="hakkinda">Uygulamamız Coğrafya ÖABT ÖSYM çıkmış soruları dahil çeşitli sorular kendi içerisinde
+        barındırmaktadır. Kısa süreli aralıklarla sorular güncellenecektir. Uygulama henüz geliştirme
+        aşamasında olduğu için bazı aksaklıklar oluşabilir. Bu aksaklıklar için sizden özür dileriz.
+        Uygulama içerisinde kendi sorularınızı görmek isterseniz mail atınız. Her türlü görüş
+        ve önerilerinizi yorumlar kısmından veya aşağıdaki mail adresinden iletebilirsiniz. İlginiz için Teşekküler.</string>
+</resources>
