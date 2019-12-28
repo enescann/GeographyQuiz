@@ -7,9 +7,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/harita"
+        android:icon="@drawable/globe_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/harita"
+        android:roundIcon="@drawable/globe_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Splash">

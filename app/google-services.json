@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1068592528665",
+    "firebase_url": "https://geographyquiz-25a04.firebaseio.com",
+    "project_id": "geographyquiz-25a04",
+    "storage_bucket": "geographyquiz-25a04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068592528665:android:c0538373bc4bfedbd65988",
+        "android_client_info": {
+          "package_name": "com.example.geographyquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068592528665-c9rqaf15rl2b4a07jo4ckrh3qg7pljfm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.geographyquiz",
+            "certificate_hash": "2d7e6e6b3487ba16746adfe06aad8203cfdea4d3"
+          }
+        },
+        {
+          "client_id": "1068592528665-62fui61jq2i13vdbkb64jaf3986rg16i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaDcG7hsdQAN7hbv02MF3ynd93q8pQkqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068592528665-62fui61jq2i13vdbkb64jaf3986rg16i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
