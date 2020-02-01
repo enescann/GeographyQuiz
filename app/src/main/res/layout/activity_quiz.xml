@@ -105,18 +105,19 @@
                     android:text="Button"
                     android:textStyle="bold" />
             </LinearLayout>
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="ca-app-pub-7249150109836276/5474038328"/>
 
         </LinearLayout>
 
     </ScrollView>
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+
 
 </RelativeLayout>

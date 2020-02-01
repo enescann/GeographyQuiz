@@ -1,10 +1,10 @@
 package com.example.geographyquiz;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActionBar;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -86,9 +86,9 @@ public class Quiz extends AppCompatActivity {
 
     private void diaolg() {
         new AlertDialog.Builder(Quiz.this)
-                .setTitle("Testi Bitirdiniz")
+                .setTitle(getResources().getString(R.string.end_test))
                 .setMessage(getResources().getString(R.string.skor, Toplam_Cevap_Sayisi, (float) (2000 / Toplam_Cevap_Sayisi)))
-                .setPositiveButton("Testi Tekrar Başlat.", new DialogInterface.OnClickListener() {
+                .setPositiveButton(getResources().getString(R.string.Replay), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         restQuiz();
@@ -109,16 +109,19 @@ public class Quiz extends AppCompatActivity {
         String TebrikMesaji = "";
         switch (kacinciDenemedeBildi) {
             case 1:
-                TebrikMesaji = "Mükemmelsin :)";
+                TebrikMesaji = getResources().getString(R.string.greeting1);
                 break;
             case 2:
-                TebrikMesaji = "İyisin :)";
+                TebrikMesaji = getResources().getString(R.string.greeting2);
                 break;
             case 3:
-                TebrikMesaji = "Fena Değilsin :(";
+                TebrikMesaji = getResources().getString(R.string.greeting3);
                 break;
             case 4:
-                TebrikMesaji = "Nihayet :(";
+                TebrikMesaji = getResources().getString(R.string.greeting4);
+                break;
+            case 5:
+                TebrikMesaji = getResources().getString(R.string.greeting5);
                 break;
         }
         soru_tv.setText(TebrikMesaji);
@@ -140,7 +143,11 @@ public class Quiz extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle(getResources().getString(R.string.Qactionbar));
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
+
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
@@ -233,7 +240,7 @@ public class Quiz extends AppCompatActivity {
             button.setEnabled(true);
         }
         // doğru cevabı da rastgele bir butona ekleyelim
-        int rastgeleIndisi = random.nextInt(4);
+        int rastgeleIndisi = random.nextInt(5);
         ((Button) ButonContainer.getChildAt(rastgeleIndisi)).setText(DogruCevap);
         SoruAnimasyonu();
     } //sonrakisoru methodu sonu.

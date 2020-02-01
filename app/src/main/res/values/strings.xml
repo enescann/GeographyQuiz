@@ -7,5 +7,16 @@
         aşamasında olduğu için bazı aksaklıklar oluşabilir. Bu aksaklıklar için sizden özür dileriz.
         Uygulama içerisinde kendi sorularınızı görmek isterseniz mail atınız. Her türlü görüş
         ve önerilerinizi yorumlar kısmından veya aşağıdaki mail adresinden iletebilirsiniz. İlginiz için Teşekküler.</string>
-    <string name="banner_ad_unit_id">ca-app-pub-7249150109836276/3206900420</string>
+
+    <string name="Hakkinda">HAKKINDA</string>
+    <string name="Mactionbar">COĞRAFYA ÖABT</string>
+    <string name="Qactionbar">SORU ÇÖZÜM</string>
+    <string name="greeting1">Çok Güzel Çalışmaya Devam :)</string>
+    <string name="greeting2">İyisin Daha da İyi olabilirsin :)</string>
+    <string name="greeting3">Moral Bozmak Yok Başaracağız:)</string>
+    <string name="greeting4">Daha Yolun Başındayız :)</string>
+    <string name="greeting5">Olacak Bu İş İnanıyorum Sana :)</string>
+    <string name="Replay">Testi Tekrar Başlat</string>
+    <string name="end_test">Testi Bitirdiniz</string>
+
 </resources>
