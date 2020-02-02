@@ -35,6 +35,7 @@ import java.util.Random;
 public class Quiz extends AppCompatActivity {
     private static final String TAG = "Quiz";
     private AdView mAdView;
+    private  static final int DIALOG_HAKKINDA = 1;
     private RelativeLayout SoruContainer;
     private LinearLayout ButonContainer;
     private TextView ilerleme_tv, soru_tv;
@@ -186,6 +187,27 @@ public class Quiz extends AppCompatActivity {
         restQuiz();
     } //create methodu sonu
     @Override
+    protected Dialog onCreateDialog(int id) {
+        Dialog dialog = null;
+        switch (id){
+            case DIALOG_HAKKINDA:
+                dialog = new Dialog(Quiz.this);
+                dialog.setTitle("HAKKINDA");
+                dialog.setContentView(R.layout.hakkinda);
+                break;
+
+            default:
+                dialog=null;
+
+        }
+        return dialog;
+    }
+    @Override
+    public  boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+        return true;
+    }
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
@@ -193,6 +215,9 @@ public class Quiz extends AppCompatActivity {
                 Intent intent = new Intent(this, MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
+                return true;
+            case R.id.hakkinda:
+                showDialog(DIALOG_HAKKINDA);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

@@ -93,10 +93,9 @@ public class MainActivity extends AppCompatActivity {
         switch (id){
             case DIALOG_HAKKINDA:
                 dialog = new Dialog(MainActivity.this);
-                dialog.setTitle(getResources().getString(R.string.Hakkinda));
+                dialog.setTitle(getResources().getString(R.string.Hakinda));
                 dialog.setContentView(R.layout.hakkinda);
                 break;
-
             default:
                 dialog=null;
 
